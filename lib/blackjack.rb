@@ -50,12 +50,11 @@ end
 #####################################################
 
 def runner
-  puts welcome
-  card_total = initial_round
-  until card_total > 21
-    card_total = hit?(card_total)
-    display_card_total(card_total)
+  welcome
+  sum = initial_round
+  until sum > 21
+    sum = hit?(sum)
+    display_card_total(sum)
   end
-end_game(card_total)
-
+  end_game(sum)
 end
