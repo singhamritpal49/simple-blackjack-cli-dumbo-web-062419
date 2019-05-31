@@ -28,7 +28,7 @@ def initial_round
     return first_round_total
  end
 
-def hit?(card_total)
+def hit?
   prompt_user #puts "Type 'h' to hit or 's' to stay"
 input_store = get_user_input
   if input_store == "h"
